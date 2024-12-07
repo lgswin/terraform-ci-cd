@@ -7,7 +7,7 @@ resource "aws_instance" "example" {
     instance_type = "t2.micro"
     count = var.core_count
 
-    tag = {
+    tags = {
         Name = "ExampleInstance"
     }
 }
